@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>My Favorite Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #003366;
+        }
+        h2 {
+            color: #004080;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function recordVisit(linkName) {
+            const now = new Date().toLocaleString();
+            localStorage.setItem(linkName, now);
+        }
+    </script>
+</head>
+<body>
+    <h1>My Frequently Used Sites</h1>
+
+    <h2>Work</h2>
+    <ul>
+        <li><a href="https://msada.dc3n.navy.mil/MSADAWeb/default.aspx" target="_blank" onclick="recordVisit('MSADA')">MSADA</a></li>
+        <li><a href="https://ntmpsweb.dc3n.navy.mil/fltmps/" target="_blank" onclick="recordVisit('FLTMPS')">FLTMPS</a></li>
+        <li><a href="https://intelshare.intelink.gov/sites/ATGToolbox/_layouts/15/start.aspx" target="_blank" onclick="recordVisit('ATG Toolbox')">ATG Toolbox</a></li>
+        <li><a href="https://toris.dc3n.navy.mil/my.policy" target="_blank" onclick="recordVisit('TORIS')">TORIS</a></li>
+        <li><a href="https://nossa.dc3n.navy.mil/" target="_blank" onclick="recordVisit('NOSSA')">NOSSA</a></li>
+        <li><a href="https://nossa.dc3n.navy.mil/nros/" target="_blank" onclick="recordVisit('NROS')">NROS</a></li>
+        <li><a href="https://flankspeed.sharepoint-mil.us/sites/Flank_Speed_Hub" target="_blank" onclick="recordVisit('Flank Speed')">Flank Speed</a></li>
+        <li><a href="file://nawesdnifs101v.nadsuswe.nads.navy.mil/COMPACFLT04$/SDNS_ATG/" target="_blank" onclick="recordVisit('SDNS ATG')">SDNS ATG</a></li>
+    </ul>
+
+    <h2>Education</h2>
+    <ul>
+        <li><a href="https://myportal.ccis.edu/dashboard" target="_blank" onclick="recordVisit('CCIS')">CCIS</a></li>
+        <li><a href="https://myeducation.netc.navy.mil/webta/home.html#nbb" target="_blank" onclick="recordVisit('Web TA')">Web TA</a></li>
+        <li><a href="https://usmap.netc.navy.mil/usmap/login" target="_blank" onclick="recordVisit('USMAP')">USMAP</a></li>
+    </ul>
+
+    <h2>Other</h2>
+    <ul>
+        <!-- Add other categories/links here if needed -->
+    </ul>
+</body>
+</html>
